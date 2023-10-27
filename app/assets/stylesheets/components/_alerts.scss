@@ -1,0 +1,28 @@
+.error-message{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+        li{
+            text-align: center;
+            list-style: none;
+            margin-top: 5px;
+            padding: 10px;
+            background-color: red;
+            width: 60%;
+            color: white;
+            font-weight: 600;
+            font-size: 1.4rem;
+            animation: growSquare 0.6s ease-in-out;
+        }
+}
+
+@keyframes growSquare {
+    from{
+      transform: scale(0.4); /* Tamaño original del cuadrado */
+    }
+    to {
+      transform: scale(1); /* Aumenta el tamaño al 150% */
+    }
+
+  }
