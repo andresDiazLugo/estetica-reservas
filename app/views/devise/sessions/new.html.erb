@@ -1,6 +1,9 @@
-<h2>Log in</h2>
+<h2>Inicie sesion</h2>
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name),html: { class: "containerForm" }) do |f| %>
+    <% resource.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+    <% end %>
   <div class="field">
     <%= f.label :email %><br />
     <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
@@ -12,7 +15,7 @@
   </div>
 
   <div class="actions">
-    <%= f.submit "iniciar sesion" %>
+    <%= f.submit "iniciar sesion", class: "btn" %>
   </div>
 <% end %>
 <div class="links">

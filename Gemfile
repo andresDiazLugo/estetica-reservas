@@ -73,3 +73,8 @@ gem "sassc-rails", "~> 2.1"
 gem 'pg'
 #devise
 gem 'devise'
+# Use jquery as the JavaScript librar
+gem 'jquery-rails'
+
+# Use jquery-ui for pretty UI
+gem 'jquery-ui-rails'
