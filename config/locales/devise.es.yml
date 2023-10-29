@@ -1,0 +1,27 @@
+es:
+  errors:
+    messages:
+      blank: "es requerido"
+      taken: "ya está en uso"
+      confirmation: "no coincide con la confirmación"
+      too_short: "es demasiado corta (mínimo %{count} caracteres)"
+  activerecord:
+    attributes:
+      user:
+        email: "Correo electrónico"
+        password: "Contraseña"
+        name: "Nombre"
+        phone: "Teléfono"
+
+  devise:
+    errors:
+      messages:
+        blank: "%{attribute} no puede estar en blanco"
+
+    models:
+      user: # Reemplaza 'user' con el nombre de tu modelo
+        attributes:
+          email: "Correo electrónico"
+          password: "Contraseña"
+          name: "Nombre"
+          phone: "Teléfono"
