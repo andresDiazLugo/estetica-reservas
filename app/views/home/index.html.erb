@@ -1,5 +1,12 @@
   <% if user_signed_in? %>
+  <div class="sesion_data_user">
     <%= link_to 'Salir', destroy_user_session_path, method:  :delete, class: "sign_out" %>
+    <p>Bienvenido <%= current_user.name %></p>
+  </div>
   <% end %>
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<h1>Crea un turno</h1>
+<%= render "nav" %>
+<div class="container_main">
+  
+<div>
+

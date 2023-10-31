@@ -1,0 +1,21 @@
+.container_nav{
+    background-color: red;
+    height: 6rem;
+    display: flex;
+    flex-direction: column;
+    ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        gap:1.3rem;
+        li{
+            cursor: pointer;
+            padding: 6px;   
+        }
+        .active{
+            background-color: black;
+            transition: all ease-in-out 0.4s;
+        }
+    }
+}
